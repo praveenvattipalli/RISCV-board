@@ -1,0 +1,4 @@
+SANITY_VERSION 1
+TMPDIR /home/microchip/riscv/aloelite/yocto_microchip/poky/build/tmp
+SSTATE_DIR /home/microchip/riscv/aloelite/yocto_microchip/poky/build/sstate-cache
+NATIVELSBSTRING ubuntu-18.04
