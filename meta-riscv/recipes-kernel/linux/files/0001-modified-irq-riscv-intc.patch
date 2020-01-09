@@ -1,0 +1,26 @@
+From 25b4a43553198fde9235a079dfceeb0c06a3b636 Mon Sep 17 00:00:00 2001
+From: praveen kumar <praveen.kumar@microchip.com>
+Date: Tue, 3 Dec 2019 15:51:19 +0530
+Subject: [PATCH] modified irq-riscv-intc
+
+Signed-off-by: praveen kumar <praveen.kumar@microchip.com>
+---
+ drivers/irqchip/irq-riscv-intc.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/drivers/irqchip/irq-riscv-intc.c b/drivers/irqchip/irq-riscv-intc.c
+index fec897d5c715..ced826c5253c 100644
+--- a/drivers/irqchip/irq-riscv-intc.c
++++ b/drivers/irqchip/irq-riscv-intc.c
+@@ -154,6 +154,8 @@ static void riscv_irq_enable(struct irq_data *d)
+ {
+ 	struct riscv_irq_data *data = irq_data_get_irq_chip_data(d);
+ 
++printk("praveen %s\n",__func__);
++
+ 	/*
+ 	 * It's only possible to write SIE on the current hart.  This jumps
+ 	 * over to the target hart if it's not the current one.  It's invalid
+-- 
+2.17.1
+

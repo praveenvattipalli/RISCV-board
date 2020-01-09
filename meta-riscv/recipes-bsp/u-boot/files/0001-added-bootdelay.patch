@@ -1,0 +1,25 @@
+From 852b210316a3c83fbbb9e6221d7654f2a5ac5e4d Mon Sep 17 00:00:00 2001
+From: praveen kumar <praveen.kumar@microchip.com>
+Date: Wed, 8 Jan 2020 15:45:24 +0530
+Subject: [PATCH] added bootdelay
+
+Signed-off-by: praveen kumar <praveen.kumar@microchip.com>
+---
+ configs/HiFive-U540_defconfig | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/configs/HiFive-U540_defconfig b/configs/HiFive-U540_defconfig
+index 37dcf73..77c5e49 100644
+--- a/configs/HiFive-U540_defconfig
++++ b/configs/HiFive-U540_defconfig
+@@ -26,4 +26,5 @@ CONFIG_HIFIVE_SPI=y
+ CONFIG_MMC=y
+ CONFIG_CMD_MMC=y
+ CONFIG_CMD_MMC_SPI=y
+-CONFIG_MMC_SPI=y
+\ No newline at end of file
++CONFIG_MMC_SPI=y
++CONFIG_BOOTDELAY=3
+-- 
+2.17.1
+

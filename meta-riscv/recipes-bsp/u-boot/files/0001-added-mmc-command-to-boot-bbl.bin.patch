@@ -1,0 +1,26 @@
+From 59d2441d1c503cec33ad9a27ed94bf150153b91e Mon Sep 17 00:00:00 2001
+From: praveen kumar <praveen.kumar@microchip.com>
+Date: Wed, 8 Jan 2020 15:02:04 +0530
+Subject: [PATCH] added mmc command to boot bbl.bin
+
+Signed-off-by: praveen kumar <praveen.kumar@microchip.com>
+---
+ include/configs/HiFive-U540.h | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/include/configs/HiFive-U540.h b/include/configs/HiFive-U540.h
+index a3a619d..fd5cafa 100644
+--- a/include/configs/HiFive-U540.h
++++ b/include/configs/HiFive-U540.h
+@@ -120,6 +120,8 @@
+ 
+ #endif
+ 
++#define CONFIG_BOOTCOMMAND      "mmc_spi 1 20000000 0; mmc read 0x80000000 0x1000 0x10000;go 0x80000000"
++
+ /* allow to overwrite serial and ethaddr */
+ #define CONFIG_ENV_OVERWRITE
+ 
+-- 
+2.17.1
+

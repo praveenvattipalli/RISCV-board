@@ -1,0 +1,28 @@
+From 52e286ee8b1aec04e5220defe30f042f90fec79d Mon Sep 17 00:00:00 2001
+From: praveen kumar <praveen.kumar@microchip.com>
+Date: Thu, 9 Jan 2020 14:24:05 +0530
+Subject: [PATCH] auto boot work around
+
+Signed-off-by: praveen kumar <praveen.kumar@microchip.com>
+---
+ common/autoboot.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/common/autoboot.c b/common/autoboot.c
+index 94133ea..12e5f98 100644
+--- a/common/autoboot.c
++++ b/common/autoboot.c
+@@ -243,8 +243,8 @@ static int __abortboot(int bootdelay)
+ # endif
+ 				break;
+ 			}
+-			udelay(10000);
+-		} while (!abort && get_timer(ts) < 1000);
++			udelay(1000);
++		} while (!abort && get_timer(ts) < 100);
+ 
+ 		printf("\b\b\b%2d ", bootdelay);
+ 	}
+-- 
+2.17.1
+

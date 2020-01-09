@@ -1,0 +1,25 @@
+From b6981ec2ea8b8101d0a68f4d371252240c7c40f6 Mon Sep 17 00:00:00 2001
+From: praveen kumar <praveen.kumar@microchip.com>
+Date: Thu, 9 Jan 2020 16:03:03 +0530
+Subject: [PATCH] changed riscvpc.dtb path
+
+Signed-off-by: praveen kumar <praveen.kumar@microchip.com>
+---
+ machine/mentry.S | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/machine/mentry.S b/machine/mentry.S
+index c7b32e5..1eda4c7 100644
+--- a/machine/mentry.S
++++ b/machine/mentry.S
+@@ -304,6 +304,6 @@ stacks:
+   .type mi_dtb, @object
+   .align 8
+ mi_dtb:
+-  .incbin "../../riscvpc.dtb"
++  .incbin "../../../../../../../../meta-riscv/device_tree_images/riscvpc.dtb"
+   .align 8
+ 
+-- 
+2.17.1
+

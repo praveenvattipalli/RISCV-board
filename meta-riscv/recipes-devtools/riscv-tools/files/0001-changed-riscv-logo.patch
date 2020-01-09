@@ -1,0 +1,47 @@
+From d7e1852cb5804fdfaca15436311ed90eb2b9464d Mon Sep 17 00:00:00 2001
+From: praveen kumar <praveen.kumar@microchip.com>
+Date: Tue, 3 Dec 2019 12:45:28 +0530
+Subject: [PATCH] changed riscv logo
+
+Signed-off-by: praveen kumar <praveen.kumar@microchip.com>
+---
+ bbl/riscv_logo.txt | 29 ++++++-----------------------
+ 1 file changed, 6 insertions(+), 23 deletions(-)
+
+diff --git a/bbl/riscv_logo.txt b/bbl/riscv_logo.txt
+index 1f4c9f5..55c4037 100644
+--- a/bbl/riscv_logo.txt
++++ b/bbl/riscv_logo.txt
+@@ -1,23 +1,6 @@
+-              vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+-                  vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+-rrrrrrrrrrrrr       vvvvvvvvvvvvvvvvvvvvvvvvvv
+-rrrrrrrrrrrrrrrr      vvvvvvvvvvvvvvvvvvvvvvvv
+-rrrrrrrrrrrrrrrrrr    vvvvvvvvvvvvvvvvvvvvvvvv
+-rrrrrrrrrrrrrrrrrr    vvvvvvvvvvvvvvvvvvvvvvvv
+-rrrrrrrrrrrrrrrrrr    vvvvvvvvvvvvvvvvvvvvvvvv
+-rrrrrrrrrrrrrrrr      vvvvvvvvvvvvvvvvvvvvvv  
+-rrrrrrrrrrrrr       vvvvvvvvvvvvvvvvvvvvvv    
+-rr                vvvvvvvvvvvvvvvvvvvvvv      
+-rr            vvvvvvvvvvvvvvvvvvvvvvvv      rr
+-rrrr      vvvvvvvvvvvvvvvvvvvvvvvvvv      rrrr
+-rrrrrr      vvvvvvvvvvvvvvvvvvvvvv      rrrrrr
+-rrrrrrrr      vvvvvvvvvvvvvvvvvv      rrrrrrrr
+-rrrrrrrrrr      vvvvvvvvvvvvvv      rrrrrrrrrr
+-rrrrrrrrrrrr      vvvvvvvvvv      rrrrrrrrrrrr
+-rrrrrrrrrrrrrr      vvvvvv      rrrrrrrrrrrrrr
+-rrrrrrrrrrrrrrrr      vv      rrrrrrrrrrrrrrrr
+-rrrrrrrrrrrrrrrrrr          rrrrrrrrrrrrrrrrrr
+-rrrrrrrrrrrrrrrrrrrr      rrrrrrrrrrrrrrrrrrrr
+-rrrrrrrrrrrrrrrrrrrrrr  rrrrrrrrrrrrrrrrrrrrrr
+-
+-       INSTRUCTION SETS WANT TO BE FREE
++               __  __ ___ ____ ____   ___   ____ _   _ ___ ____  
++              |  \/  |_ _/ ___|  _ \ / _ \ / ___| | | |_ _|  _ \ 
++              | |\/| || | |   | |_) | | | | |   | |_| || || |_) |
++              | |  | || | |___|  _ <| |_| | |___|  _  || ||  __/ 
++              |_|  |_|___\____|_| \_\\___/ \____|_| |_|___|_|    
++                                                                 
+-- 
+2.17.1
+
