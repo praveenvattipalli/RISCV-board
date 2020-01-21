@@ -18,3 +18,4 @@ cp tmp/deploy/images/${PRJ_NAME}/${PRJ_NAME}-image-${PRJ_NAME}.tar.gz aloelite_i
 cp tmp/deploy/images/${PRJ_NAME}/u-boot-${PRJ_NAME}.bin aloelite_images/u-boot.bin
 cp tmp/deploy/images/${PRJ_NAME}/bbl.bin aloelite_images/
 
+exit
