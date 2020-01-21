@@ -189,7 +189,9 @@ do_install_append_class-target() {
     if ${@bb.utils.contains('PACKAGECONFIG', 'apache2', 'true', 'false', d)}; then
         install -d ${D}${sysconfdir}/apache2/modules.d
         install -d ${D}${sysconfdir}/php/apache2-php${PHP_MAJOR_VERSION}
+	install -d ${D}${libdir}/apache2/modules/
         install -m 644  ${WORKDIR}/70_mod_php${PHP_MAJOR_VERSION}.conf ${D}${sysconfdir}/apache2/modules.d
+	install -m 755 libs/libphp${PHP_MAJOR_VERSION}.so ${D}${libdir}/apache2/modules
         sed -i s,lib/,${libexecdir}/, ${D}${sysconfdir}/apache2/modules.d/70_mod_php${PHP_MAJOR_VERSION}.conf
         cat ${S}/php.ini-production | \
             sed -e 's,extension_dir = \"\./\",extension_dir = \"/usr/lib/extensions\",' \
