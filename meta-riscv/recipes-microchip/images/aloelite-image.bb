@@ -12,6 +12,6 @@ IMAGE_ROOTFS_SIZE ?= "8192"
 IMAGE_ROOTFS_EXTRA_SPACE_append = "${@bb.utils.contains("DISTRO_FEATURES", "systemd", " + 4096", "" ,d)}"
 
 IMAGE_INSTALL_append += " apps gdb vim   "
-IMAGE_INSTALL_append += " gcc make perl  "
-IMAGE_INSTALL_append += " apache2 php php-cli "
+IMAGE_INSTALL_append += " gcc make perl sudo "
+IMAGE_INSTALL_append += " apache2 php php-cgi  "
 IMAGE_INSTALL_append += " openssh-sftp-server wget openssh openssl python"
