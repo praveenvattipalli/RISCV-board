@@ -42,7 +42,7 @@ endif
 	mke2fs -t ext3 $(PART3)
 	mkdir -p /tmp/aloelite_rootfs
 	mount $(PART3) /tmp/aloelite_rootfs
-	tar -xvf aloelite-image-freedom-u540.tar.gz -C /tmp/aloelite_rootfs/
+	tar -xvf aloelite-image-aloelite.tar.gz -C /tmp/aloelite_rootfs/
 	sync
 	umount /tmp/aloelite_rootfs/
 	rm -rf /tmp/aloelite_rootfs/
